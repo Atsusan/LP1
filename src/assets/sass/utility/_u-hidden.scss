@@ -3,10 +3,9 @@
 // ---
 // 非表示
 // ---
-.u-hidden-pc {
-	// PC時に非表示
 
-	@include global.mq("pc") {
+@media screen and (min-width: 768px) {
+	.u-hidden-pc {
 		display: none;
 	}
 }

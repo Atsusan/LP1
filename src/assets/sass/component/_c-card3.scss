@@ -1,0 +1,145 @@
+@use '../global' as global;
+
+// card style 3
+.c-card3{
+    display: flex;
+    width: 342px;
+    height: 125px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+    gap: 36px;
+
+    &:hover::before {
+        opacity: 1;
+    }
+
+    &:hover {
+        
+        & .c-card3__title {
+            color: #fff;
+        }
+
+        & .c-card3__arrow {
+            background-color: #fff;
+        }
+    }
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.49);
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 41px;
+        height: 41px;
+        top: -16px;
+        left: -13px;
+    }
+
+    &__border {
+        content: "";
+        position: absolute;
+        top: 4.375%;
+        left: 1.42857%;
+        width: 97.14285%;
+        height: 91.25%;
+        border: 1px solid #fff;
+        z-index: 1;
+    }
+
+    &__img {
+    flex: 0 0 calc((125 / 342) * 100%);
+    height: 100%;
+
+        & > img {
+            display: block;
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__line {
+        border: 1px solid #fff;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__content {
+        width: calc((176 / 326) * 100%);
+        margin-left: auto;
+        height: 100%;
+        padding: 7px 7px 7px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__title {
+        text-align: center;
+        font-family: global.$ff-en;
+        font-size: 20px;
+        color: global.$text-gray;
+    }
+
+    &__arrow {
+        position: absolute;
+        bottom: 16px;
+        right: 18px;
+        display: inline-block;
+        width: 45px;
+        height: 1px;
+        background-color: global.$text-gray;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: inline-block;
+            width: 11px;
+            height: 1px;
+            transform: translateY(-3px) rotate(32deg);
+            background-color: global.$text-gray;
+        }
+    }
+}
+
+.c-card3--pink {
+    &::after {
+        background-color: global.$tPink;
+    }
+}
+.c-card3--blond {
+    &::after {
+        background-color: global.$tBlond;
+    }
+}
+.c-card3--blue {
+    &::after {
+        background-color: global.$tBlue;
+    }
+}
+.c-card3--green {
+    &::after {
+        background-color: global.$tGreen;
+    }
+}
+.c-card3--orange {
+    &::after {
+        background-color: global.$tOrange;
+    }
+}
