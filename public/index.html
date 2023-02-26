@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<!-- OGP宣言 -->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no"><!-- 電話のリンクをしない設定 -->
+	<title>架空LP-BestPlanner</title>
+	<meta name="description" content="誰と作るかから始める結婚式"><!-- 概要欄 -->
+	<meta property="og:title" content="架空LP"><!-- OGPタイトル -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://example.com/"><!-- OGPサイトURL -->
+	<meta property="og:image" content="https://example.com/img/ogp.png"><!-- OGPサムネイル -->
+	<meta property="og:site_name" content="架空LP-BestPlanner"><!-- OGPサイトネーム -->
+	<meta property="og:description" content="誰と作るかから始める結婚式"><!-- OGPサイトの概要欄 -->
+	<meta name="twitter:card" content="summary_large_image"><!-- OGP Twitterカード -->
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css?ver=5.8.2">
+	<!-- adobe font -->
+	<script>
+		(function(d) {
+			var config = {
+					kitId: 'yag2wdp',
+					scriptTimeout: 3000,
+					async: true
+				},
+				h = d.documentElement,
+				t = setTimeout(function() {
+					h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+				}, config.scriptTimeout),
+				tk = d.createElement("script"),
+				f = false,
+				s = d.getElementsByTagName("script")[0],
+				a;
+			h.className += " wf-loading";
+			tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+			tk.async = true;
+			tk.onload = tk.onreadystatechange = function() {
+				a = this.readyState;
+				if (f || a && a != "complete" && a != "loaded") return;
+				f = true;
+				clearTimeout(t);
+				try {
+					Typekit.load(config)
+				} catch (e) {}
+			};
+			s.parentNode.insertBefore(tk, s)
+		})(document);
+	</script>
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<!-- CSS -->
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<!-- ファビコンの設定 -->
+	<!-- <link rel="icon" href="./img/icon-home.png"> -->
+</head>
+
+<body>
+	<!-- sp時ロゴ表示 -->
+	<header class="p-header l-header l-inner u-hidden-pc">
+		<h1 class="p-header-logo">
+			<a href="#" class="c-logo-link p-header-logo__link">
+				<img src="./assets/img/parts/logo.png" alt="BestPlanner">
+			</a>
+		</h1>
+	</header>
+
+
+
+
+	<!-- p-topのレスポンシブ対応できてない -->
+	<!-- 恐らくwidthとhightをvwで設定しアスペクト比を固定しつつ、縮小するイメージ -->
+	<!-- paddingもvwにする必要があるかもしれない。 -->
+	<!-- line-hightについてvwなどの伸縮する設定が必要かもしれない。 -->
+	<!-- 可変で動かすところは全てvwにする必要があるが、1440px以下の範囲でvwを設定した方がいい -->
+
+
+
+	<div class="l-mv p-mv">
+		<div class="p-mv__bg">
+			<div class="p-top l-mv__top">
+				<p class="p-top__read1">
+					You&nbsp;can&nbsp;meet
+					<br>
+					the&nbsp;best&nbsp;weeding&nbsp;planner
+				</p>
+				<span class="p-top__hr"></span>
+				<p class="p-top__read2">
+					<span>誰と</span>作るか
+					<br>
+					から
+					<br>
+					始める結婚式
+				</p>
+				<span class="p-top__hr"></span>
+				<div class="p-top__logo">
+					<img src="./assets/img/parts/logo.svg" alt="BestPlanner">
+				</div>
+			</div>
+		</div>
+		<div class="p-mv__btn-box">
+			<a href="#" class="p-mv__btn1 c-btn-arrow">
+				<div class="c-btn-arrow__box">
+					<p class="c-btn-arrow__text">
+						<span>おすすめの</span>
+						<span><span class="c-btn-arrow__text--span">プラン</span>から</span>
+						<span>プランナーを探す</span>
+					</p>
+					<span class="c-btn-arrow__icon"></span>
+				</div>
+			</a>
+			<a href="#" class="p-mv__btn2 c-btn-arrow c-btn-arrow--mainColor">
+				<div class="c-btn-arrow__box">
+					<p class="c-btn-arrow__text">
+						<span>希望の</span>
+						<span><span class="c-btn-arrow__text--span">エリア</span>から</span>
+						<span>プランナーを探す</span>
+					</p>
+					<span class="c-btn-arrow__icon"></span>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<!--
+<section>
+  <div class="l-inner">
+    <div class="c-heading p-instagram__title">
+      <h2 class="c-heading__title"></h2>
+      <p class="c-heading__sub"></p>
+    </div>
+  </div>
+</section> -->
+
+
+	<main class="l-content">
+
+		<!-- recent -->
+
+		<section class="l-reent p-recent">
+			<div class="l-inner">
+				<div class="p-recent__title c-heading">
+					<h2 class="c-heading__title">Recent&nbsp;Planner&nbsp;and&nbsp;Reports</h2>
+					<p class="c-heading__sub">最近見たレポートとプランナー</p>
+				</div>
+				<div class="p-recent__content u-mt64">
+					<div class="p-planner">
+						<div class="c-heading2">
+							<h3 class="c-heading2__title">Planner</h3>
+							<p class="c-heading2__sub">プランナー</p>
+						</div>
+						<!-- Slider main container -->
+						<div class="swiper">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">Slide 1</div>
+								<div class="swiper-slide">Slide 2</div>
+								<div class="swiper-slide">Slide 3</div>
+								...
+							</div>
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+
+							<!-- If we need scrollbar -->
+							<div class="swiper-scrollbar"></div>
+						</div>
+
+					</div>
+					<div class="p-report">
+
+						<!-- Slider main container -->
+						<div class="swiper">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">Slide 1</div>
+								<div class="swiper-slide">Slide 2</div>
+								<div class="swiper-slide">Slide 3</div>
+								...
+							</div>
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+
+							<!-- If we need scrollbar -->
+							<div class="swiper-scrollbar"></div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- voice -->
+
+		<section class>
+			<div class="l-inner">
+				<div class="c-heading p-instagram__title">
+					<h2 class="c-heading__title"></h2>
+					<p class="c-heading__sub"></p>
+				</div>
+				<div class="p-voice__content">
+					<div class="p-new-voice">
+						<!-- Slider main container -->
+						<div class="swiper">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">Slide 1</div>
+								<div class="swiper-slide">Slide 2</div>
+								<div class="swiper-slide">Slide 3</div>
+								...
+							</div>
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+
+							<!-- If we need scrollbar -->
+							<div class="swiper-scrollbar"></div>
+						</div>
+					</div>
+					<div class="p-ranking">
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- instagram -->
+		<section class="l-instaglam l-section">
+			<div class="l-inner">
+				<div class="c-heading p-instagram__title">
+					<h2 class="c-heading__title">Instagram</h2>
+					<p class="c-heading__sub">インスタグラム</p>
+				</div>
+				<ul class="p-instagram__lists u-mt64">
+					<li class="p-instagram_item c-photo-animation">
+						<a href="#">
+							<img src="./assets/img/instagram-img1.png" alt="instagram-img1">
+						</a>
+					</li>
+					<li class="p-instagram_item c-photo-animation">
+						<a href="#">
+							<img src="./assets/img/instagram-img2.png" alt="instagram-img2">
+						</a>
+					</li>
+					<li class="p-instagram_item c-photo-animation">
+						<a href="#">
+							<img src="./assets/img/instagram-img3.png" alt="instagram-img3">
+						</a>
+					</li>
+					<li class="p-instagram_item c-photo-animation">
+						<a href="#">
+							<img src="./assets/img/instagram-img4.png" alt="instagram-img4">
+						</a>
+					</li>
+					<li class="p-instagram_item c-photo-animation">
+						<a href="#">
+							<img src="./assets/img/instagram-img5.png" alt="instagram-img5">
+						</a>
+					</li>
+					<li class="p-instagram_item c-photo-animation">
+						<a href="#">
+							<img src="./assets/img/instagram-img6.png" alt="instagram-img6">
+						</a>
+					</li>
+					<li class="p-instagram_item c-photo-animation">
+						<a href="#">
+							<img src="./assets/img/instagram-img7.png" alt="instagram-img7">
+						</a>
+					</li>
+					<li class="p-instagram_item c-photo-animation">
+						<a href="#">
+							<img src="./assets/img/instagram-img8.png" alt="instagram-img8">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<!-- footer-menu -->
+	<div class="l-footer-menu p-footer-menu">
+		<div class="l-inner p-footer-menu__flex">
+			<div class="p-footer-menu__left">
+				<div class="p-footer-menu__logo u-mt8">
+					<img src="./assets/img/parts/logo.svg" alt="BestPlanner">
+				</div>
+				<div class="p-footer-menu__snsArea u-mt54">
+					<p class="p-footer-menu__icon c-icon">Follow&nbsp;Me</p>
+					<div class="p-footer-menu__sns c-sns u-mt8">
+						<a href="#" class="c-sns__link">
+							<img src="./assets/img/parts/twitter.svg" alt="twitter">
+						</a>
+						<a href="#" class="c-sns__link">
+							<img src="./assets/img/parts/instagram.svg" alt="instagram">
+						</a>
+						<a href="#" class="c-sns__link">
+							<img src="./assets/img/parts/facebook.svg" alt="facebook">
+						</a>
+						<a href="#" class="c-sns__link">
+							<img src="./assets/img/parts/line.svg" alt="line">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="p-footer-menu__right">
+				<ul class="p-footer-nav__lists u-ml16">
+					<li class="p-footer-nav__item">
+						<a href="#" class="p-footer-nav__link">プランナーを探す</a>
+					</li>
+					<li class="p-footer-nav__item">
+						<a href="#" class="p-footer-nav__link">シンデレラレポ</a>
+					</li>
+					<li class="p-footer-nav__item">
+						<a href="#" class="p-footer-nav__link">お気に入りレポート</a>
+					</li>
+					<li class="p-footer-nav__item">
+						<a href="#" class="p-footer-nav__link">ログイン</a>
+					</li>
+				</ul>
+				<ul class="p-footer-nav__lists u-ml16 u-mt24">
+					<li class="p-footer-nav__item">
+						<a href="#" class="p-footer-nav__link">初めてご利用される方へ</a>
+					</li>
+					<li class="p-footer-nav__item">
+						<a href="#" class="p-footer-nav__link">よくあるご質問</a>
+					</li>
+					<li class="p-footer-nav__item">
+						<a href="#" class="p-footer-nav__link">お問い合わせ</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="l-inner p-footer-menu__footer u-mt24">
+			<ul class="p-footer-menu__footer-nav p-footer-nav__lists">
+				<li class="p-footer-nav__item">
+					<a href="#" class="p-footer-nav__link">運営会社</a>
+				</li>
+				<li class="p-footer-nav__item">
+					<a href="#" class="p-footer-nav__link">プライバシーポリシー</a>
+				</li>
+				<li class="p-footer-nav__item">
+					<a href="#" class="p-footer-nav__link">利用規約</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- footer -->
+	<footer class="l-footer p-footer">
+		<small class="p-footer__copy u-mt8">&copy;Best&nbsp;Planner&nbsp;All&nbsp;rights&nbsp;reserved.</small>
+		<p class="p-footer__text u-mb9">本サイト内は株式会社ウィザード様のご協力のもと作成したコーディング用の練習課題です。実在の人物・団体とは関係ありません。</p>
+	</footer>
+
+
+	<!-- floating -->
+	<div class="p-floating l-floating">
+		<!-- icon -->
+		<a class="p-drawer__btn c-btn-drawer"><span></span></a>
+		<!-- drawer背景 -->
+		<div class="c-btn-drawer__bg">
+			<!-- コンテンツ背景 -->
+			<nav class="c-btn-drawer__content">
+				<!-- コンテンツ部分 -->
+				<div class="p-drawerContent-head">
+					<a href="#" class="c-logo-link p-drawerContent__link">
+						<img src="./assets/img/parts/logo.svg" alt="BestPlanner">
+					</a>
+				</div>
+				<div class="l-inner--drawer p-drawerList">
+					<ul class="c-drawerList--1">
+						<li class="c-drawerList__item">
+							<a class="c-drawerList__link" href="#">プランナーを探す</a>
+						</li>
+						<li class="c-drawerList__item u-mt32">
+							<a class="c-drawerList__link" href="#">シンデレラレポ</a>
+						</li>
+						<li class="c-drawerList__item u-mt32">
+							<a class="c-drawerList__link" href="#">お気に入りレポート</a>
+						</li>
+						<li class="c-drawerList__itemu u-mt32">
+							<a class="c-drawerList__link--btn c-btn--gray u-mt4" href="#">ログイン</a>
+						</li>
+					</ul>
+					<ul class="c-drawerslists--2">
+						<li class="c-drawerList__item">
+							<a class="c-drawerList__link" href="#">初めてご利用される方へ</a>
+						</li>
+						<li class="c-drawerList__item u-mt32">
+							<a class="c-drawerList__link" href="#">よくあるご質問</a>
+						</li>
+						<li class="c-drawerList__item u-mt32">
+							<a class="c-drawerList__link" href="#">お問い合わせ</a>
+						</li>
+					</ul>
+				</div>
+				<div class="p-drawerList__footer">
+					<span class="c-line"><span></span></span>
+					<ul class="p-drawerList--footer">
+						<li class="c-drawerList__item--footer">
+							<a class="c-drawerList__link--footer" href="#">運営会社</a>
+						</li>
+						<li class="c-drawerList__item--footer u-ml24">
+							<a class="c-drawerList__link--footer" href="#">プライバシーポリシー</a>
+						</li>
+						<li class="c-drawerList__item--footer u-ml24">
+							<a class="c-drawerList__link--footer" href="#">利用規約</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- / drawer中身 -->
+
+		<!-- floatingコンテンツ -->
+		<a href="#" class="p-floating__item c-floating c-floating--first-time u-hidden-sp">
+			<dev class="c-floating--first-time">
+				<img src="./assets/img/parts/menu1.svg" alt="初めてご利用の方へ">
+			</dev>
+			<span>初めて</span>
+			<span>ご利用の方へ</span>
+		</a>
+		<a href="#" class="p-floating__item c-floating c-floating--login u-hidden-sp">
+			<span class="c-floating--login"></span>
+			<span>ログイン</span>
+		</a>
+		<a href="#" class="p-floating__item c-floating c-floating--fav-report i-hidden-sp">
+			<span class="c-floating--fav-report"></span>
+			<span>お気に入り</span>
+			<span>レポート</span>
+		</a>
+	</div>
+
+
+	<!-- swiper -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- script.js -->
+	<script src="./assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+@use "../global" as global;
+
+.p-footer {
+    height: 55px;
+    background-color: global.$main-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__copy {
+        display: block;
+        font-family: global.$ff-en;
+        font-weight: 400;
+        font-size: 12px;
+        color: #fff;
+    }
+
+    &__text {
+        display: block;
+        font-family: global.$ff-en;
+        font-weight: 400;
+        font-size: 10px;
+        color: #fff;
+    }
+}

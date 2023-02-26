@@ -1,0 +1,27 @@
+@use "../global" as global;
+
+.p-mv {
+    width: 100%;
+    height: 54.94513vw;
+    max-height: 791.21px;
+    position: relative;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../img/top-mv.jpg) no-repeat top center / cover;
+    }
+
+    &__btn-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-bottom: -57.79px;
+    }
+}

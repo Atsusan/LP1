@@ -1,0 +1,22 @@
+@use '../global' as global;
+
+.p-footer-nav {
+
+    &__lists {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__link {
+        font-family: global.$ff-heading;
+        font-weight: 400;
+        font-size: 16px;
+        color: global.$text-color;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+}

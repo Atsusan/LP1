@@ -1,0 +1,192 @@
+@use "../global" as global;
+
+// top
+
+.c-btn-arrow {
+    width: 400px;
+    height: 132px;
+    padding: 14px 16px;
+    display: inline-block;
+    background-color: global.$text-gray;
+
+
+    &--mainColor {
+        background-color: global.$main-color;
+    }
+
+    &__box {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        &--span {
+            font-family: global.$ff-heading;
+            font-weight: 700;
+            font-size: 24px;
+            color: #fff;
+        }
+    }
+}
+
+
+// ドロワー
+.c-btn-drawer {
+    display: block;
+    width: 100px; //drawer-btnのクリックの大きさ
+    height: 100px; //drawer-btnのクリックの大きさ
+    position: relative; // drawer-btnの基準位置、固定の場合はfixed,動かす場合はrelative
+    background-color: global.$main-color;
+    z-index: map-get(global.$layer, drawer);
+    transition: transform .2s, opacity .3s;
+
+    & > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        width: 33.75px;
+        height: 2px;
+        border-radius: 10px;
+        transition: background-color 0.1s;
+        background-color: #fff;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 2px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+        &::before {
+            top: -9px;
+            transition: transform 0.2s;
+        }
+        &::after {
+            top: 9px;
+            transition: transform 0.3s;
+        }
+    }
+
+    /* クリックされてからのbtn処理 */
+    body.js-drawer-open & {
+        width: 56px;
+        height: 56px;
+
+        & span {
+            /* btn クリック時の色 */
+            background-color: transparent;
+
+            &::before,
+            &::after {
+                /* btn クリック時の色 */
+                background-color: #fff;
+            }
+            &::before {
+                transform: translateY(9px) rotate(135deg);
+            }
+            &::after {
+                transform: translateY(-9px) rotate(-315deg);
+            }
+        }
+    }
+
+    // drawer背景
+    &__bg {
+        width: 0;
+        height: 100%;
+        max-height: 861px;
+        background-color: global.$sub-color;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: map-get(global.$layer, drawer-bg);
+        transition: width .3s;
+
+        /* クリックされてからのマスク処理 */
+        body.js-drawer-open & {
+            width: 100%;
+            padding: 30px;
+        }
+    }
+
+    // コンテンツ背景
+
+    &__content {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        // z-index: map-get(global.$layer, drawer-content);
+        display: none;
+
+        body.js-drawer-open & {
+            display: block;
+        }
+    }
+}
+
+.c-btn--gray {
+    display: inline-block;
+    font-family: global.$ff-heading;
+    font-weight: 400;
+    color: #FFF;
+    background-color: global.$text-gray;
+    padding: 16px 103px 16px 24px;
+    position: relative;
+    transition: all .3s;
+    border: 1px solid global.$text-gray;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: #fff;
+        margin-right: 12px;
+        transition: all .3s;
+    }
+
+    &::before {
+        width: 27px;
+        height: 1px;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        margin-right: 12px;
+    }
+
+    &::after {
+        width: 12px;
+        height: 1px;
+        top: 45%;
+        right: 0;
+        transform: translateY(-50%) rotate(30deg);
+    }
+
+    &:hover {
+        background-color: #fff;
+        color: global.$text-gray;
+
+        &::before,
+        &::after {
+            background-color: global.$text-gray;
+        }
+    }
+
+}

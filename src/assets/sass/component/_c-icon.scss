@@ -1,0 +1,33 @@
+@use '../global' as global;
+
+.c-icon {
+    display: inline-block;
+    font-family: global.$ff-en;
+    font-weight: 400;
+    font-size: 16px;
+    color: global.$text-gray;
+    position: relative;
+    padding-left: 18px;
+    padding-right: 18px;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 21px;
+        background-color: global.$text-gray;
+    }
+
+    &::before {
+        top: 0;
+        left: 0;
+        transform: translateY(2px) rotate(-45deg);
+    }
+
+    &::after {
+        top: 0;
+        right: 0;
+        transform: translateY(2px) rotate(45deg);
+    }
+}

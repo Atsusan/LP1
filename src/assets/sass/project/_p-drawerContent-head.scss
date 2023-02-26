@@ -1,0 +1,17 @@
+@use "../global" as global;
+
+//　コンテンンツ中身
+
+.p-drawerContent-head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+    overflow: hidden;
+}
+
+
+.p-drawerContent__link {
+    height: 218px;
+    width: 302px;
+}

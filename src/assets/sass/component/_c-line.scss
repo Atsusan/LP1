@@ -1,0 +1,41 @@
+@use "../global" as global;
+
+.c-line {
+    position: absolute;
+    margin-bottom: 25px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 2px;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 1px;
+        background-color: global.$text-gray;
+    }
+
+    &::before {
+        transform: translate(-2px, 8px) rotate(45deg);
+    }
+
+    &::after {
+        transform: translate(-16px, 8px) rotate(-45deg);
+    }
+
+    & > span {
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        display: inline-block;
+        width: 1px;
+        height: 1px;
+        background-color: global.$text-gray;
+        padding-top: 540px;
+    }
+}

@@ -1,0 +1,50 @@
+@use "../global" as global;
+
+
+.c-drawerList {
+
+    &--1 {
+        display: flex;
+        flex-direction: column;
+        width: 41.3461%;
+        height: 100%;
+
+    }
+
+    &--2 {
+        display: flex;
+        flex-direction: column;
+        width: 41.3461%;
+        height: 100%;
+    }
+
+
+    &--footer {
+        display: block;
+        font-family: global.$ff-heading;
+        font-weight: 400;
+        font-size: 18px;
+        color: global.$text-color;
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    &__link {
+        display: block;
+        font-family: global.$ff-heading;
+        font-weight: 400;
+        font-size: 24px;
+        color: global.$text-color;
+
+        &:hover {
+            opacity: .7;
+        }
+
+        &--btn {
+            font-weight: 400;
+            font-size: 24px;
+        }
+    }
+}
+

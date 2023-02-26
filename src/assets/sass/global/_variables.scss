@@ -1,0 +1,63 @@
+// 色
+$main-color: #84D6D6; // メインカラー
+$sub-color: #EEF9F8; // サブカラー
+$accent-color: #01b3a7; // アクセントカラー
+$accent-color-active: #00aca0; // アクセントカラー（アクティブ）
+$text-color: #000; // テキストカラー
+$text-color-2: #202020; // テキストカラー
+$text-gray: #757676; // テキストカラー
+$cWhite: #fff; 
+
+// タグ色
+$tPink: #D684B8;
+$tOrange: #F1B04E;
+$tGreen: #ABD07B;
+$tblue: #84B6D6;
+// ランキング色
+$r-1: #C99700;
+$r-2: #C4C4C4;
+$r-3: #BA6E40;
+
+// フォント
+$ff-awesome: "Font Awesome 5 Free", sans-serif; // Font Awesome
+$ff-heading: "fot-tsukuardgothic-std", sans-serif; // 見出し
+$ff-en: Avenir, 'Helvetica neue', Helvetica, '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'MS Ｐゴシック', sans-serif;
+$ff-base: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif; // 日本語標準
+$fz-base: 16px; // ベースフォントサイズ
+$fw-base: 500; // ベースフォントウェイト
+$lh-base: 1.5; // ベース行間
+
+// レイアウト
+$inner-width: 1240px; // インナー幅サイズ
+$sp-width: 768px; // スマホサイズ
+
+// ブレークポイント
+$breakpoints: (
+  // スマホ以下の場合
+  "sp": "screen and (max-width: #{$sp-width - 1px})",
+  // タブレット以下の場合
+  "tab": "screen and (max-width: #{$inner-width - 1px})",
+  // タブレット以上の場合
+  "pc": "screen and (min-width: #{$inner-width})"
+);
+
+// 重なり順の定義
+$layer: (
+  // ローディング
+  loading: 300,
+  // モーダル
+  modal: 100,
+  // ドロワー
+  drawer: 50,
+  // ドロワーコンテンツ背景
+  drawer-content: 45,
+  // ドラワー背景
+  drawer-bg: 40,
+  // フローティング
+  floating: 30,
+  // ヘッダー
+  header: 20,
+  // フッター
+  footer: 10,
+  default: 1
+);

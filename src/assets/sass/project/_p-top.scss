@@ -1,0 +1,59 @@
+@use '../global' as global;
+
+.p-top {
+    position: absolute;
+    top: 0;
+    left: 10.069%;
+    display: inline-block;
+    padding: 136px 75px 136px 65px;
+    background: rgba(255, 255, 255, 0.91);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__read1 {
+        font-family: global.$ff-en;
+        font-weight: 500;
+        font-size: clamp(13px, 1.111vw , 16px);
+        line-height: 1.36;
+        letter-spacing: 0.1em;
+        color: global.$text-gray;
+        text-align: center;
+    }
+
+    &__read2 {
+        font-family: global.$ff-heading;
+        font-weight: 400;
+        font-size: clamp(21px, 3.333vw, 48px);
+        line-height: 96px;
+        letter-spacing: 0.08em;
+        color: global.$text-color;
+        text-align: center;
+        & > span {
+            font-size: clamp(37px, 4.444vw, 64px);
+            color: global.$main-color;
+        }
+    }
+
+    &__hr {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 218px;
+        height: 1px;
+        background-color: global.$text-gray;
+    }
+
+    &__logo {
+        height: 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+
+        & > img {
+            width: 256px;
+            height: 186px;
+        }
+    }
+}

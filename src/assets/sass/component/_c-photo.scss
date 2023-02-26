@@ -1,0 +1,25 @@
+@use '../global' as global;
+
+.c-photo-animation {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    & > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: .3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        & > img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}

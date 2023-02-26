@@ -1,0 +1,9 @@
+@use "../global" as global;
+
+.l-floating {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-left: auto;
+    z-index: map-get(global.$layer, floating);
+}

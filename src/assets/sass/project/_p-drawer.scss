@@ -1,0 +1,12 @@
+@use "../global" as global;
+
+.p-drawer {
+}
+
+// drawerモーション
+.p-drawer__btn {
+    body.js-drawer-open & {
+        transition: transform .3s ease;
+        transform: translate(-54px, 54px);
+    }
+}

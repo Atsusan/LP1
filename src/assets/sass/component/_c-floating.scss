@@ -1,0 +1,33 @@
+@use "../global" as global;
+
+.c-floating {
+    width: 100px;
+    height: 100px;
+    border: 1px solid global.$main-color;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: global.$ff-heading;
+    font-weight: 400;
+    font-size: 12px;
+    transition: opacity .3s;
+
+    &:not(:first-of-type) {
+        border-top: none;
+    }
+
+    &--first-time,
+    &--login,
+    &--fav-report {
+
+        & > img {
+            width: 100%;
+        }
+    }
+
+    &:hover {
+        opacity: .9;
+    }
+}

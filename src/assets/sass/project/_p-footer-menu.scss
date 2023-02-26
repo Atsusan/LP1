@@ -1,0 +1,65 @@
+@use '../global' as global;
+
+.p-footer-menu {
+    background-color: #F7F7F7;
+
+    // 共通
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // left
+    &__left {
+        width: 50%;
+    }
+
+    &__logo {
+        height: 50px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &  > img {
+            object-fit: cover;
+            width: 229px;
+            height: 119px;
+        }
+    }
+
+    &__snsArea {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+
+    }
+
+    &__sns {
+
+    }
+
+    // left
+
+    // right
+    &__right {
+        width: 50%;
+    }
+
+    // footer
+    &__footer {
+        border-top: 1px solid global.$text-gray;
+        height: 69px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__footer-nav {
+        margin-left: calc(50% + 32px);
+    }
+}

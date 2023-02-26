@@ -1,0 +1,22 @@
+@use "../global" as global;
+
+//　コンテンンツ中身
+
+.p-drawerList {
+    display: flex;
+    margin-top: 92px;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: calc(100% - 100px - 92px - 30px - 25px);
+}
+
+.p-drawerList__footer {
+    position: relative;
+}
+
+.p-drawerList--footer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: calc(50% + 151px);
+}
